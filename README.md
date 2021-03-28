@@ -15,5 +15,5 @@
 
 ##### 0324
 ```
-심화된 CSS(margin, padding, <div>태그, grid 등)에 대하여 배우고 0317에 만들었던 웹사이트를 변형함
+심화된 CSS(margin, padding, <div>태그, grid 등 display modes)에 대하여 배우고 0317에 만들었던 웹사이트를 변형함
 ```
