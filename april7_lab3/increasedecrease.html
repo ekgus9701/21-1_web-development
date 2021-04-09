@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <script>
+            var count=0;
+            function plus(){
+                count++;
+                document.getElementById("text").innerHTML=count;
+            }
+            function minus(){
+                count--;
+                document.getElementById("text").innerHTML=count;
+            }
+
+        </script>
+        <h2>Inc / Dec</h2>
+
+        <p id="text">0</p>
+        <button onclick="plus()">+</button>
+        <button onclick="minus()">-</button>
+    </body>
+
+</html>
