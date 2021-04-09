@@ -17,3 +17,12 @@
 ```
 심화된 CSS(margin, padding, <div>태그, grid 등 display modes)에 대하여 배우고 0317에 만들었던 웹사이트를 변형함
 ```
+
+##### 0331
+```
+css를 배운 마지막 시간, table,opacity, transparency, shadow 등을 배우고 이전에 만든 웹사이트를 responsive하게 최종 변형함. 
+```
+##### 0407
+```
+javascript의 기초를 배우고 이전에 만들었던 사이트를 js를 통해 만들어보는 실습을 함.
+```
