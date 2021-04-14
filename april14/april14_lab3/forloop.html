@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="table.css">
+</head>
+
+<body>
+    <h2> Square Table</h2>
+
+    <table>
+        <tr>
+            <th>x</th>
+            <th>y = x*x</th>
+        </tr>
+        <script>
+            var x;
+            for (x = 1; x < 10; x++) {
+                y = x * x;
+                document.write("<tr> <td>" + x + "</td> <td>" + y + "</td> </tr>");
+            }
+        </script>
+    </table>
+</body>

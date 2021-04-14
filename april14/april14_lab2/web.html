@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web content</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="mystyle.css">
+    <script src="myscript.js">
+
+    </script>
+</head>
+
+<body>
+    <h1>Web Content</h1>
+    <div id="layout">
+        <div id="menu">
+            <a id="m1" onclick="menu_web()">Web</a>
+            <a id="m2" onclick="menu_html()">HTML</a>
+            <a id="m3" onclick="menu_css()">CSS</a>
+            <a id="m4" onclick="menu_js()">JavaScript</a>
+
+        </div>
+        <script>
+            function menu_web() {
+                document.getElementById('text').innerHTML = p1;
+                document.getElementById('m1').style.borderBottom = "3px solid yellow";
+                document.getElementById('m2').style.borderBottom = "3px solid #555";
+                document.getElementById('m3').style.borderBottom = "3px solid #555";
+                document.getElementById('m4').style.borderBottom = "3px solid #555";
+            }
+            function menu_html() {
+                document.getElementById('text').innerHTML = p2;
+                document.getElementById('m2').style.borderBottom = "3px solid yellow";
+                document.getElementById('m1').style.borderBottom = "3px solid #555";
+                document.getElementById('m3').style.borderBottom = "3px solid #555";
+                document.getElementById('m4').style.borderBottom = "3px solid #555";
+            }
+            function menu_css() {
+                document.getElementById('text').innerHTML = p3;
+                document.getElementById('m3').style.borderBottom = "3px solid yellow";
+                document.getElementById('m1').style.borderBottom = "3px solid #555";
+                document.getElementById('m2').style.borderBottom = "3px solid #555";
+                document.getElementById('m4').style.borderBottom = "3px solid #555";
+            }
+            function menu_js() {
+                document.getElementById('text').innerHTML = p4;
+                document.getElementById('m4').style.borderBottom = "3px solid yellow";
+                document.getElementById('m1').style.borderBottom = "3px solid #555";
+                document.getElementById('m2').style.borderBottom = "3px solid #555";
+                document.getElementById('m3').style.borderBottom = "3px solid #555";
+            }
+        </script>
+        <div id="text">
+            <script> document.write(p1);</script>
+        </div>
+    </div>
+</body>
+
+</html>

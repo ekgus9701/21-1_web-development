@@ -1,0 +1,46 @@
+<html>
+    <body>
+        <style>
+            p{font-size: 150%;}
+            button{margin:2px;}
+            #buttons{ display:grid;grid-template-columns: 30px 30px ;}
+        </style>
+        <script>
+            var count_a=0;
+            function inc_a(){
+                count_a++;
+                document.getElementById("a").innerHTML=count_a;
+                document.getElementById("c").innerHTML=count_a*count_b;
+            }
+            function dec_a(){
+                count_a--;
+                document.getElementById("a").innerHTML=count_a;
+                document.getElementById("c").innerHTML=count_a*count_b;
+            }
+            var count_b=0;
+            function inc_b(){
+                count_b++;
+                document.getElementById("b").innerHTML=count_b;
+                document.getElementById("c").innerHTML=count_a*count_b;
+            }
+            function dec_b(){
+                count_b--;
+                document.getElementById("b").innerHTML=count_b;
+                document.getElementById("c").innerHTML=count_a*count_b;
+            }
+           
+
+        </script>
+        <h3>Multiply</h3>
+
+        <p><span id="a">1</span> X <span id="b">1</span> = <span id="c">1</span></p>
+        <div id="buttons">
+            <button onclick="inc_a()">+</button>
+            <button onclick="inc_b()">+</button>
+            <button onclick="dec_a()">-</button>
+            <button onclick="dec_b()">-</button>
+        </div>
+ 
+    </body>
+
+</html>
