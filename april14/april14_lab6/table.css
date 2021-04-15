@@ -1,0 +1,16 @@
+table{
+    fonr-family: sans-serif;
+    border-collapse:collapse;
+}
+
+td,th{
+    border:1px solid #ddd;
+    padding: 8px;
+    width:100px;
+    text-align:center;
+}
+
+th{
+    background-color:green;
+    color:white;
+}

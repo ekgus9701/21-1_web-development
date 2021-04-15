@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="table.css">
+</head>
+
+<body>
+    <h2> Phone Book </h2>
+    <button onclick="add_row()">Add</button><br><br>
+
+    <table id="tbl">
+        <tr>
+            <th>Name</th>
+            <th>Phone</th>
+        </tr>
+        <script>
+            var N = ["Ewha", "June", "Jane", "Nick"];
+            var P = [1234, 3347, 1111, 1212];
+            var i = 0;
+            function add_row() {
+
+                document.getElementById("tbl").innerHTML += "<tr> <td>" + N[i] + "</td> <td>" + P[i] + "</td> </tr>";
+                i++;
+            }
+        </script>
+    </table>
+
+</body>
+
+</html>
