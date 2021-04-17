@@ -26,3 +26,8 @@ css를 배운 마지막 시간, table,opacity, transparency, shadow 등을 배�
 ```
 javascript의 기초를 배우고 이전에 만들었던 사이트를 js를 통해 만들어보는 실습을 함.
 ```
+
+##### 0414
+```
+javascript를 이용해 loop, array를 구현해보는 실습을 함 
+```
