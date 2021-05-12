@@ -31,3 +31,7 @@ javascript의 기초를 배우고 이전에 만들었던 사이트를 js를 통�
 ```
 javascript를 이용해 loop, array를 구현해보는 실습을 함 
 ```
+##### 0428
+```
+javascript의 object 개념을 배우고 그래프를 그리는 방법, 여러 input type을 사용하는 방법을 배움
+```
