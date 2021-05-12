@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="table.css">
+</head>
+
+<body>
+
+
+    <h2> Phone Book </h2>
+
+    <input id="name"><input id="phone">
+    <button onclick="add_row()">Add</button>
+    <button onclick="del_row()">Del</button><br><br>
+    <table id="tbl">
+        <tr>
+            <th>Name</th>
+            <th>Phone</th>
+        </tr>
+
+        <script>
+            var pbook = [];
+
+            function add_row() {
+                n = document.getElementById("name").value;
+                p = document.getElementById("phone").value;
+                a = { name: n, phone: p };
+                pbook.push(a);
+                display_pbook();
+            }
+            function del_row() {
+                var n = document.getElementById("name").value;
+                for (var i = 0; i < pbook.length; i++) {
+                    if (pbook[i].name == n) {
+
+                        pbook.splice(i, 1);
+                        break;
+                    }
+                }
+                display_pbook();
+            }
+
+            function display_pbook() {
+                document.getElementById("tbl").innerHTML = "<tr><th>Name</th><th>Phone</th></tr>";
+                var len = pbook.length;
+                for (var i = 0; i < len; i++)
+                    document.getElementById("tbl").innerHTML += "<tr> <td>" + pbook[i].name + "</td> <td>" + pbook[i].phone + "</td> </tr>";
+            }
+
+
+        </script>
+
+    </table>
+
+
+</body>

@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="table.css">
+</head>
+
+<body>
+    <h2> Multiplication Table </h2>
+
+    <input id="x">X<input id="y">
+    <button onclick="add_row()">ADD</button><br><br>
+    <button onclick="del_row()">DEL</button><br><br>
+    <table id="tbl">
+        <tr>
+            <th>x</th>
+            <th>y</th>
+            <th>x * y</th>
+
+        </tr>
+        <script>
+
+            var pbook = [];
+
+            function add_row() {
+                n = document.getElementById("x").value;
+                p = document.getElementById("y").value;
+                z = n * p;
+                a = { x: n, y: p, z: z };
+                pbook.push(a);
+                display_pbook();
+            }
+            function del_row() {
+                pbook.pop();
+                display_pbook();
+            }
+
+
+            function display_pbook() {
+                document.getElementById("tbl").innerHTML = " <tr><th>x</th><th>y</th><th>x * y</th></tr>";
+                var len = pbook.length;
+                for (var i = 0; i < len; i++)
+                    document.getElementById("tbl").innerHTML += "<tr> <td>" + pbook[i].x + "</td> <td>" + pbook[i].y + "</td><td>" + pbook[i].z + "</td> </tr>";
+            }
+        </script>
+    </table>
+</body>

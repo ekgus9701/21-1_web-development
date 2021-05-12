@@ -1,0 +1,45 @@
+<html>
+
+<body>
+    <span style="background-color: antiquewhite; padding:5px;">
+        <span id="hh"></span>:<span id="mm"></span>:<span id="ss"></span>
+        <span id="ap"></span></span>
+
+
+    <script>
+        setInterval(run_everysec, 1000);
+
+        function run_everysec() {
+            var d = new Date();
+            if (d.getHours() < 10) {
+                document.getElementById("hh").innerHTML = "0" + d.getHours();
+            }
+            else {
+                document.getElementById("hh").innerHTML = d.getHours();
+            }
+
+            if (d.getMinutes() < 10) {
+                document.getElementById("mm").innerHTML = "0" + d.getMinutes();
+            }
+            else {
+                document.getElementById("mm").innerHTML = d.getMinutes();
+            }
+
+            if (d.getSeconds() < 10) {
+                document.getElementById("ss").innerHTML = "0" + d.getSeconds();
+            }
+            else {
+                document.getElementById("ss").innerHTML = d.getSeconds();
+            }
+
+            if (d.getHours() < 12) {
+                document.getElementById("ap").innerHTML = "am";
+            }
+            else {
+                document.getElementById("ap").innerHTML = "pm";
+            }
+        }
+    </script>
+</body>
+
+</html>

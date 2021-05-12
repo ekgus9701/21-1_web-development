@@ -1,0 +1,15 @@
+<html>
+
+<body>
+    <p id="d1"></p>
+    <script>
+        setInterval(run_everysec, 1000); //run_everysec 옆에 괄호를 안쓰는게 맞음
+        function run_everysec() {
+            var d = new Date();
+            document.getElementById("d1").innerHTML = d;
+        }
+    </script>
+
+</body>
+
+</html>
