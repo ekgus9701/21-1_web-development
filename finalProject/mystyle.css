@@ -1,0 +1,126 @@
+  @font-face {
+      font-family: 'nanumsquare';
+      src: local('NanumSquareR'),
+         url('/fonts/NanumSquareR.ttf') format('truetype')
+         
+}
+  body{
+      font-family: 'nanumsquare';}
+
+      /* background-image:url(img/img2.jpg);
+      background-size: cover;
+      background-repeat: no-repeat; 
+} */ 
+
+#image{
+
+    position:absolute;
+    left:0px;
+    top:0px;
+    z-index:-1;
+    width:100%;
+    height: 500px;
+}
+
+#image img{
+    height:100%;
+    width:100%;
+}
+
+#toppart{
+   
+   
+    width:100%;
+    height: 500px;
+}
+
+h1{
+    padding: 15px;
+   
+    text-align : center;
+    text-decoration:none;
+    background-color: rgba(255, 253, 253, 0.5);
+}
+
+a{
+    font-family: 'nanumsquare';
+    color:white;
+    padding: 15px;
+    margin:5px;
+    text-align : center;
+    text-decoration:none;
+    background-color: olivedrab;
+
+}
+
+a:visited{
+    color:white;
+}
+
+#menu{
+    display:grid; grid-template-columns: auto auto auto auto;
+    border:0px;
+
+}
+
+
+
+
+.introducing_jeju{
+    display:block;
+    color:white;
+    background-color:rgba(85, 107, 47, 0.7);
+
+}
+#seeing_top3{
+    background-color:rgba(213, 228, 188, 0.7);
+    display:block;
+    color:white;
+}
+.more{
+    display:block;
+    margin-left: auto;
+    margin-right:auto;
+    width:200px;
+}
+.top3{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    color:white;
+    padding: 20px;
+    grid-column-gap:20px;
+     margin:1px;
+     text-align : center;
+
+}
+
+.top3_1{
+    grid-column-start:1;
+    grid-column-end:2;
+    background-color:rgba(85, 107, 47, 0.7);
+}
+.top3_2{
+    grid-column-start:2;
+    grid-column-end:3;
+    background-color:rgba(85, 107, 47, 0.7);
+}
+.top3_3{
+    grid-column-start:3;
+    grid-column-end:4;
+    background-color:rgba(85, 107, 47, 0.7);
+}
+
+figure {
+  display: inline-block;  
+  position: relative;
+}
+figcaption{
+   background-color: olivedrab;
+   color:white;
+   text-align : center;
+   position: absolute;
+   bottom: 4px;
+   left: 0; 
+   right:0
+}
+
