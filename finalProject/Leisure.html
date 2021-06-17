@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JEJUTRAVELER</title>
+    <script type="text/javascript">
+        var imgArray = new Array();
+        imgArray[0] = "img/img2.jpg";
+        imgArray[1] = "img/img3.jpg";
+        imgArray[2] = "img/img5.jpg";
+        imgArray[3] = "img/img6.jpg";
+        imgArray[4] = "img/img1.jpg";
+        imgArray[5] = "img/img15.jpg";
+        imgArray[6] = "img/img16.jpg";
+        var i = 1;
+        function showImage() {
+            if (i == 7)
+                i = 0;
+            var imgNum = i;
+            var objImg = document.getElementById("introimg");
+            objImg.src = imgArray[imgNum];
+            setTimeout(showImage, 5000);
+            i++;
+        }
+    </script>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="mystyle.css"">
+    
+</head>
+
+<body onload=" showImage()">
+    <iframe src="music/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+
+    <audio class="audio" autoplay loop controls>
+
+        <source src="music/goodtoknow.mp3">
+
+    </audio>
+
+    <div id="toppart">
+        <a class="menu" href="home.html">
+            <font size="25px"></font>JEJU TRAVELER
+        </a>
+
+        <div id="cdr">
+            <a href="https://www.kma.go.kr/jeju/html/main/index.jsp" target="_blank">
+                <img src='img/weather.png' width=70 height=70>
+            </a>
+        </div>
+
+        <div id="covid">
+            <a href="https://www.jeju.go.kr/corona19.jsp" target="_blank">
+                <img src='img/covid.png' width=70 height=70>
+            </a>
+        </div>
+
+        <div id="midpart" style='width:500px;'>
+            <h1>제주 여행갈 땐<br> JEJU TRAVELER</h1>
+
+            <font size="5px">제주 여행을 준비하는 당신에게<br> 꼭 필요한 정보와 꿀팁을 드립니다.</font><br><br>
+        </div>
+
+    </div>
+
+    <div id="image">
+        <img id="introimg" border="0">
+    </div>
+    <div id="layout">
+        <div id="menu">
+            <a class="menu" href="TouristSites.html">Tourist Sites</a>
+            <a class="menu" href="Leisure.html">Leisure</a>
+            <a class="menu" href="Cuisine.html">Cuisine</a>
+            <a class="menu" href="Others.html"> Others</a>
+        </div>
+        <h1 id="topic" align="center" style="margin-bottom: 0;">당신을 위한 제주 레저</h1>
+        <hr style="border: dotted 1px olivedrab">
+        <h3 style=" text-align : center;">제주 동쪽 레저</h3>
+        <hr style="border: dotted 1px olivedrab">
+        <div class="top">
+
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CONT_000000000500476&menuId=DOM_000001718004000000#p1"
+                    target="_blank">
+                    <img src='img/월정리카약체험장.png' width=100% height=300>
+                    <p class="explain">월정리카약체험장</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_200000000010373&menuId=DOM_000001718004000000#p1"
+                    target="_blank">
+                    <img src='img/신풍리밭담길.jpg' width=100% height=300>
+                    <p class="explain">신풍리밭담길</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_000000000020139&menuId=DOM_000001718004000000#p1"
+                    target="_blank">
+                    <img src='img/제주레일바이크.jpg' width=100% height=300>
+                    <p class="explain">제주레일바이크</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_000000000020985&menuId=DOM_000001718004000000#p1"
+                    target="_blank">
+                    <img src='img/승마장.jpg' width=100% height=300>
+                    <p class="explain">쇠와꽃승마장</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_200000000007852&menuId=DOM_000001718004000000#p2"
+                    target="_blank">
+                    <img src='img/인디.jpg' width=100% height=300>
+                    <p class="explain">제주인디</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_200000000009853&menuId=DOM_000001718004000000#p1"
+                    target="_blank">
+                    <img src='img/비앙도연평리.jpg' width=100% height=300>
+                    <p class="explain">비양도연평리야영지</p>
+                </a>
+            </div>
+        </div>
+        <hr style="border: dotted 1px olivedrab">
+        <h3 style=" text-align : center;">제주 서쪽 레저</h3>
+        <hr style="border: dotted 1px olivedrab">
+        <div class="top">
+
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_000000000022262&menuId=DOM_000001718004000000#p1"
+                    target="_blank">
+                    <img src='img/동산농원 딸기체험장.jpg' width=100% height=300>
+                    <p class="explain">동산농원딸기체험장</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_000000000000614&menuId=DOM_000001718004000000#p1"
+                    target="_blank">
+                    <img src='img/비체올린.jpg' width=100% height=300>
+                    <p class="explain">비체올린</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_200000000007461&menuId=DOM_000001718004000000#p2"
+                    target="_blank">
+                    <img src='img/수월봉 전기자전거.jpg' width=100% height=300>
+                    <p class="explain">수월봉전기자전거</p>
+                </a>
+            </div>
+        </div>
+        <div class="top">
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_200000000009531&menuId=DOM_000001718004000000#p1"
+                    target="_blank">
+                    <img src='img/번개.jpg' width=100% height=300>
+                    <p class="explain">번개레이싱</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_200000000008832&menuId=DOM_000001718004000000#p2"
+                    target="_blank">
+                    <img src='img/몽키.jpg' width=100% height=300>
+                    <p class="explain">스위트몽키</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CONT_000000000500288&menuId=DOM_000001718004000000#p1"
+                    target="_blank">
+                    <img src='img/온천.gif' width=100% height=300>
+                    <p class="explain">산방산탄산온천</p>
+                </a>
+            </div>
+
+        </div>
+        <hr style="border: dotted 1px olivedrab">
+        <h3 style=" text-align : center;">제주 남쪽 레저</h3>
+        <hr style="border: dotted 1px olivedrab">
+        <div class="top">
+
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CONT_000000000500564&menuId=DOM_000001718004000000#p1"
+                    target="_blank">
+                    <img src='img/제주실탄사격장.png' width=100% height=300>
+                    <p class="explain">제주실탄사격장</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CONT_000000000500465&menuId=DOM_000001718004000000#p1"
+                    target="_blank">
+                    <img src='img/요트.jpg' width=100% height=300>
+                    <p class="explain">퍼시픽 리솜 요트투어 샹그릴라</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_200000000007659&menuId=DOM_000001718004000000#p1"
+                    target="_blank">
+                    <img src='img/장만들기.jpg' width=100% height=300>
+                    <p class="explain">장 만들기 체험</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CONT_000000000500327&menuId=DOM_000001718004000000#p1"
+                    target="_blank">
+                    <img src='img/휴양림.jpg' width=100% height=300>
+                    <p class="explain">서귀포자연휴양림</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_200000000007535&menuId=DOM_000001718004000000#p1"
+                    target="_blank">
+                    <img src='img/빵.jpg' width=100% height=300>
+                    <p class="explain">감귤상웨빵 체험</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_200000000007533&menuId=DOM_000001718004000000#p1"
+                    target="_blank">
+                    <img src='img/트래킹.jpg' width=100% height=300>
+                    <p class="explain">내창트레킹</p>
+                </a>
+            </div>
+        </div>
+        <hr style="border: dotted 1px olivedrab">
+        <h3 style=" text-align : center;">제주 북쪽 레저</h3>
+        <hr style="border: dotted 1px olivedrab">
+        <div class="top">
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_000000000020611&menuId=DOM_000001718004000000#"
+                    target="_blank">
+                    <img src='img/아날로그감귤밭.jpg' width=100% height=300>
+                    <p class="explain">아날로그감귤밭</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_000000000020230&menuId=DOM_000001718004000000#p1"
+                    target="_blank">
+                    <img src='img/아침미소목장.jpg' width=100% height=300>
+                    <p class="explain">아침미소목장</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CONT_000000000500577&menuId=DOM_000001718004000000#"
+                    target="_blank">
+                    <img src='img/패러.png' width=100% height=300>
+                    <p class="explain">제주하늘을날다</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_200000000007492&menuId=DOM_000001718004000000#p2"
+                    target="_blank">
+                    <img src='img/캔들.jpg' width=100% height=300>
+                    <p class="explain">미요캔들</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_200000000007918&menuId=DOM_000001718004000000#p3"
+                    target="_blank">
+                    <img src='img/손방둥이.jpg' width=100% height=300>
+                    <p class="explain">손방둥이</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CONT_000000000500006&menuId=DOM_000001718004000000#p1"
+                    target="_blank">
+                    <img src='img/라프.jpg' width=100% height=300>
+                    <p class="explain">제주라프 짚라인</p>
+                </a>
+            </div>
+
+
+        </div>
+        <hr style="border: dotted 1px olivedrab">
+
+        <a class="more"
+            href="https://www.visitjeju.net/kr/detail/list?menuId=DOM_000001718004000000&cate1cd=cate0000000002&cate2cd=cate0000000011#p1&region2cd&pageSize=6&sortListType=reviewcnt&viewType=thumb"
+            target="_blank" style="margin-left: auto; margin-right: auto;">
+            관련정보 더보기
+
+        </a>
+
+        <a style="text-align: right;display:scroll;bottom:10px; color:olivedrab;  display:block;" href="#"
+            title="맨 위로">맨 위로
+            가기</a>
+
+</html>

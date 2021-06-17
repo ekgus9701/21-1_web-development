@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JEJUTRAVELER</title>
+    <script type="text/javascript">
+        var imgArray = new Array();
+        imgArray[0] = "img/img2.jpg";
+        imgArray[1] = "img/img3.jpg";
+        imgArray[2] = "img/img5.jpg";
+        imgArray[3] = "img/img6.jpg";
+        imgArray[4] = "img/img1.jpg";
+        imgArray[5] = "img/img15.jpg";
+        imgArray[6] = "img/img16.jpg";
+        var i = 3;
+        function showImage() {
+            if (i == 7)
+                i = 0;
+            var imgNum = i;
+            var objImg = document.getElementById("introimg");
+            objImg.src = imgArray[imgNum];
+            setTimeout(showImage, 5000);
+            i++;
+        }
+    </script>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="mystyle.css"">
+    
+</head>
+
+<body onload=" showImage()">
+    <iframe src="music/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+
+    <audio class="audio" autoplay loop controls>
+
+        <source src="music/lovebites.mp3">
+
+    </audio>
+    <div id="toppart">
+        <a class="menu" href="home.html">
+            <font size="25px"></font>JEJU TRAVELER
+        </a>
+        <div id="cdr">
+            <a href="https://www.kma.go.kr/jeju/html/main/index.jsp" target="_blank">
+                <img src='img/weather.png' width=70 height=70>
+            </a>
+        </div>
+
+        <div id="covid">
+            <a href="https://www.jeju.go.kr/corona19.jsp" target="_blank">
+                <img src='img/covid.png' width=70 height=70>
+            </a>
+        </div>
+
+        <div id="midpart" style='width:500px;'>
+            <h1>제주 여행갈 땐<br> JEJU TRAVELER</h1>
+
+            <font size="5px">제주 여행을 준비하는 당신에게<br> 꼭 필요한 정보와 꿀팁을 드립니다.</font><br><br>
+        </div>
+
+    </div>
+
+    <div id="image">
+        <img id="introimg" border="0">
+    </div>
+
+    <div id="layout">
+        <div id="menu">
+            <a class="menu" href="TouristSites.html">Tourist Sites</a>
+            <a class="menu" href="Leisure.html">Leisure</a>
+            <a class="menu" href="Cuisine.html">Cuisine</a>
+            <a class="menu" href="Others.html"> Others</a>
+        </div>
+        <h1 id="topic" align="center" style="margin-bottom: 0;">당신을 위한 제주 맛집</h1>
+        <hr style="border: dotted 1px olivedrab">
+        <h3 style=" text-align : center;">제주 동쪽 맛집</h3>
+        <hr style="border: dotted 1px olivedrab">
+        <div class="top">
+
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_000000000020026&menuId=DOM_000001719001000000#p1"
+                    target="_blank">
+                    <img src='img/고래라면.jpg' width=100% height=300>
+                    <p class="explain">고래라면</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_000000000018578&menuId=DOM_000001719001000000#p1"
+                    target="_blank">
+                    <img src='img/하하호호.jpg' width=100% height=300>
+                    <p class="explain">하하호호</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_000000000020678&menuId=DOM_000001719001000000#p1"
+                    target="_blank">
+                    <img src='img/만덕이네.jpg' width=100% height=300>
+                    <p class="explain">만덕이네</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_000000000020090&menuId=DOM_000001719001000000#p2"
+                    target="_blank">
+                    <img src='img/어부피자.jpg' width=100% height=300>
+                    <p class="explain">어부피자</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_000000000020446&menuId=DOM_000001719001000000#p4"
+                    target="_blank">
+                    <img src='img/민경.jpg' width=100% height=300>
+                    <p class="explain">민경이네어등포해녀촌</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_000000000018890&menuId=DOM_000001719001000000#p1"
+                    target="_blank">
+                    <img src='img/아이스.jpg' width=100% height=300>
+                    <p class="explain">우도왕자이야기</p>
+                </a>
+            </div>
+        </div>
+        <hr style="border: dotted 1px olivedrab">
+        <h3 style=" text-align : center;">제주 서쪽 맛집</h3>
+        <hr style="border: dotted 1px olivedrab">
+        <div class="top">
+
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_000000000020117&menuId=DOM_000001719001000000#"
+                    target="_blank">
+                    <img src='img/만선식당.jpg' width=100% height=300>
+                    <p class="explain">만선식당</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_200000000007431&menuId=DOM_000001719001000000#p1"
+                    target="_blank">
+                    <img src='img/제주선.jpg' width=100% height=300>
+                    <p class="explain">제주선</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_000000000022562&menuId=DOM_000001719001000000#p1"
+                    target="_blank">
+                    <img src='img/마노르블랑.jpg' width=100% height=300>
+                    <p class="explain">마노르블랑</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_200000000007432&menuId=DOM_000001719001000000#p2"
+                    target="_blank">
+                    <img src='img/다이닝.jpg' width=100% height=300>
+                    <p class="explain">랜딩 다이닝</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_000000000019324&menuId=DOM_000001719001000000#p3"
+                    target="_blank">
+                    <img src='img/젠하.jpg' width=100% height=300>
+                    <p class="explain">젠하이드어웨이</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_200000000007435&menuId=DOM_000001719001000000#p5"
+                    target="_blank">
+                    <img src='img/엠.jpg' width=100% height=300>
+                    <p class="explain">엠 라운지</p>
+                </a>
+            </div>
+        </div>
+        <hr style="border: dotted 1px olivedrab">
+        <h3 style=" text-align : center;">제주 남쪽 맛집</h3>
+        <hr style="border: dotted 1px olivedrab">
+        <div class="top">
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_200000000008377&menuId=DOM_000001719001000000#p9"
+                    target="_blank">
+                    <img src='img/겹겹.jpg' width=100% height=300>
+                    <p class="explain">겹겹의 의도</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_000000000020207&menuId=DOM_000001719001000000#p1"
+                    target="_blank">
+                    <img src='img/국수바다.jpg' width=100% height=300>
+                    <p class="explain">국수바다</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CONT_000000000501382&menuId=DOM_000001719001000000#"
+                    target="_blank">
+                    <img src='img/최고집.jpg' width=100% height=300>
+                    <p class="explain">최고집</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_000000000022822&menuId=DOM_000001719001000000#"
+                    target="_blank">
+                    <img src='img/갓포하루.jpg' width=100% height=300>
+                    <p class="explain">갓포하루</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_200000000008371&menuId=DOM_000001719001000000#p4"
+                    target="_blank">
+                    <img src='img/모루쿠다.jpg' width=100% height=300>
+                    <p class="explain">모루쿠다</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_000000000020675&menuId=DOM_000001719001000000#p9"
+                    target="_blank">
+                    <img src='img/아뜰.jpg' width=100% height=300>
+                    <p class="explain">아뜰리에안</p>
+                </a>
+            </div>
+
+        </div>
+        <hr style="border: dotted 1px olivedrab">
+        <h3 style=" text-align : center;">제주 북쪽 맛집</h3>
+        <hr style="border: dotted 1px olivedrab">
+        <div class="top">
+
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_000000000020072&menuId=DOM_000001719001000000#p1"
+                    target="_blank">
+                    <img src='img/제주김만복.jpg' width=100% height=300>
+                    <p class="explain">제주김만복</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_000000000020143&menuId=DOM_000001719001000000#p1"
+                    target="_blank">
+                    <img src='img/고집돌우럭.jpg' width=100% height=300>
+                    <p class="explain">고집돌우럭</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_000000000020245&menuId=DOM_000001719001000000#p1"
+                    target="_blank">
+                    <img src='img/살롱드라방.jpg' width=100% height=300>
+                    <p class="explain">살롱드라방</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_000000000020478&menuId=DOM_000001719001000000#p4"
+                    target="_blank">
+                    <img src='img/붉은제주.jpg' width=100% height=300>
+                    <p class="explain">붉은제주</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_000000000020130&menuId=DOM_000001719001000000#p5"
+                    target="_blank">
+                    <img src='img/로드.png' width=100% height=300>
+                    <p class="explain">ROAD129</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_200000000007139&menuId=DOM_000001719001000000#p5"
+                    target="_blank">
+                    <img src='img/마틸다.jpg' width=100% height=300>
+                    <p class="explain">마틸다</p>
+                </a>
+            </div>
+        </div>
+        <hr style="border: dotted 1px olivedrab">
+        <a class="more"
+            href="https://www.visitjeju.net/kr/detail/list?menuId=DOM_000001719001000000&cate1cd=cate0000000005#p1&region2cd&pageSize=6&sortListType=reviewcnt&viewType=thumb"
+            target="_blank" style="margin-left: auto; margin-right: auto;">
+            관련정보 더보기
+
+        </a>
+        <a style="text-align: right;display:scroll;bottom:10px; color:olivedrab;  display:block;" href="#"
+            title="맨 위로">맨 위로
+            가기</a>
+
+</html>

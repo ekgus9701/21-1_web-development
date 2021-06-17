@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JEJUTRAVELER</title>
+    <script type="text/javascript">
+        var imgArray = new Array();
+        imgArray[0] = "img/img2.jpg";
+        imgArray[1] = "img/img3.jpg";
+        imgArray[2] = "img/img5.jpg";
+        imgArray[3] = "img/img6.jpg";
+        imgArray[4] = "img/img1.jpg";
+        imgArray[5] = "img/img15.jpg";
+        imgArray[6] = "img/img16.jpg";
+        var i = 2;
+        function showImage() {
+            if (i == 7)
+                i = 0;
+            var imgNum = i;
+            var objImg = document.getElementById("introimg");
+            objImg.src = imgArray[imgNum];
+            setTimeout(showImage, 5000);
+            i++;
+        }
+    </script>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="mystyle.css"">
+   
+</head>
+
+<body onload=" showImage()">
+    <iframe src="music/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+
+    <audio class="audio" autoplay loop controls>
+
+        <source src="music/takethegood.mp3">
+
+    </audio>
+    <div id="toppart">
+        <a class="menu" href="home.html">
+            <font size="25px"></font>JEJU TRAVELER
+        </a>
+
+        <div id="cdr">
+            <a href="https://www.kma.go.kr/jeju/html/main/index.jsp" target="_blank">
+                <img src='img/weather.png' width=70 height=70>
+            </a>
+        </div>
+
+        <div id="covid">
+            <a href="https://www.jeju.go.kr/corona19.jsp" target="_blank">
+                <img src='img/covid.png' width=70 height=70>
+            </a>
+        </div>
+
+        <div id="midpart" style='width:500px;'>
+            <h1>제주 여행갈 땐<br> JEJU TRAVELER</h1>
+
+            <font size="5px">제주 여행을 준비하는 당신에게<br> 꼭 필요한 정보와 꿀팁을 드립니다.</font><br><br>
+        </div>
+
+    </div>
+
+    <div id="image">
+        <img id="introimg" border="0">
+    </div>
+    <div id="layout">
+        <div id="menu">
+            <a class="menu" href="TouristSites.html">Tourist Sites</a>
+            <a class="menu" href="Leisure.html">Leisure</a>
+            <a class="menu" href="Cuisine.html">Cuisine</a>
+            <a class="menu" href="Others.html"> Others</a>
+        </div>
+        <h1 id="topic" align="center" style="margin-bottom: 0;">당신을 위한 제주 추가정보</h1>
+        <hr style="border: dotted 1px olivedrab">
+        <h3 style=" text-align : center;">제주 항공권</h3>
+        <hr style="border: dotted 1px olivedrab">
+        <div class="top">
+
+            <div class="top_1">
+                <a href="https://www.skyscanner.co.kr/transport/flights/sela/cju/210622/210629/?adults=1&adultsv2=1&cabinclass=economy&children=0&childrenv2=&destinationentityid=39499832&inboundaltsenabled=false&infants=0&originentityid=27538638&outboundaltsenabled=false&preferdirects=false&preferflexible=false&ref=home&rtn=1"
+                    target="_blank">
+                    <img src='img/스카이스캐너.png' width=100% height=300>
+                    <p class="explain">스카이스캐너</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://tour.tmon.co.kr/flight/domestic/result?trip=RT&sch=%EC%84%9C%EC%9A%B8+(%EC%9D%B8%EC%B2%9C/%EA%B9%80%ED%8F%AC)_SEL_2021-6-21|%EC%A0%9C%EC%A3%BC_CJU_2021-6-24&ps=1-0-0&seat=D"
+                    target="_blank">
+                    <img src='img/티몬.jpg' width=100% height=300>
+                    <p class="explain">티몬</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://flight.naver.com/flights/results/domestic?trip=RT&fareType=Y&scity1=GMP&ecity1=CJU&scity2=CJU&ecity2=GMP&adult=1&child=0&infant=0&sdate1=2021.06.21.&sdate2=2021.06.23."
+                    target="_blank">
+                    <img src='img/네이버.png' width=100% height=300>
+                    <p class="explain">네이버</p>
+                </a>
+            </div>
+        </div>
+        <hr style="border: dotted 1px olivedrab">
+
+        <h3 style=" text-align : center;">제주 숙박</h3>
+        <hr style="border: dotted 1px olivedrab">
+        <div class="top">
+
+            <div class="top_1">
+                <a href="https://www.airbnb.co.kr/s/%EC%A0%9C%EC%A3%BC/homes?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&flexible_trip_dates%5B%5D=july&flexible_trip_dates%5B%5D=june&flexible_trip_lengths%5B%5D=weekend_trip&date_picker_type=calendar&disable_auto_translation=false&source=structured_search_input_header&search_type=search_query"
+                    target="_blank">
+                    <img src='img/에어비앤비.jpg' width=100% height=300>
+                    <p class="explain">에어비앤비</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.agoda.com/ko-kr/pages/agoda/default/DestinationSearchResult.aspx?city=16901&site_id=1891463&tag=45b17d1d-e0b0-fe2a-ce90-5513829d856b&device=c&network=g&adid=493472456536&rand=899936030352234119&expid=&adpos=&aud=kwd-6927948326&gclid=CjwKCAjwwqaGBhBKEiwAMk-FtFkOBkBZuXrvJTyjmGj-Op8kfwhBf_Q2Vdmzvwr9oHGTRp_r3EJeGRoCFIcQAvD_BwE&checkin=2021-06-26&checkout=2021-06-28&adults=4&childs=0&rooms=1&los=2"
+                    target="_blank">
+                    <img src='img/아고다.jpg' width=100% height=300>
+                    <p class="explain">아고다</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.yanolja.com/region/5000000000" target="_blank">
+                    <img src='img/야놀자.png' width=100% height=300>
+                    <p class="explain">야놀자</p>
+                </a>
+            </div>
+        </div>
+        <hr style="border: dotted 1px olivedrab">
+
+        <h3 style=" text-align : center;">제주 교통</h3>
+        <hr style="border: dotted 1px olivedrab">
+        <div class="top">
+
+            <div class="top_1">
+                <a href="https://carmore.kr/home/container-main-view.html?rt=1&mt=1&ssat=2&sls=5&utm_source=google_pc&utm_medium=cpc&utm_campaign=clickchoice_pc&utm_content=jeju&utm_term=%EC%A0%9C%EC%A3%BC%EB%A0%8C%ED%8A%B8%EC%B9%B4&ACE_REF=adwords_g&ACE_KW=%EC%A0%9C%EC%A3%BC%EB%A0%8C%ED%8A%B8%EC%B9%B4&gclid=CjwKCAjwwqaGBhBKEiwAMk-FtLW1ooCAz9aZAGN5-kV5oG3Ik-IXrucJcAtfbMX5lAZLrteCQoTUzxoCgbkQAvD_BwE&ssac=Q_1&srsd=2021-06-18%2010:00:00&sred=2021-06-19%2010:00:00&v=210601"
+                    target="_blank">
+                    <img src='img/카모아.png' width=100% height=300>
+                    <p class="explain">카모아렌트카</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="http://bus.jeju.go.kr/" target="_blank">
+                    <img src='img/제주버스.png' width=100% height=300>
+                    <p class="explain">제주버스정보시스템</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.jeju.go.kr/booking/taxi/jeju.htm" target="_blank">
+                    <img src='img/택시.jpg' width=100% height=300>
+                    <p class="explain">제주관광행복택시</p>
+                </a>
+            </div>
+        </div>
+        <hr style="border: dotted 1px olivedrab">
+
+        <a class="more" href="https://www.visitjeju.net/kr/lowmenu?menuId=DOM_000001703002000000#" target="_blank"
+            style="margin-left: auto; margin-right: auto;">
+            관련정보 더보기
+
+        </a>
+        <a style="text-align: right;display:scroll;bottom:10px; color:olivedrab;  display:block;" href="#"
+            title="맨 위로">맨 위로
+            가기</a>
+
+</html>

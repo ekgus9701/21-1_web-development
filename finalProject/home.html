@@ -9,31 +9,56 @@
         imgArray[1] = "img/img3.jpg";
         imgArray[2] = "img/img5.jpg";
         imgArray[3] = "img/img6.jpg";
-        imgArray[4] = "img/img14.jpg";
+        imgArray[4] = "img/img1.jpg";
         imgArray[5] = "img/img15.jpg";
+        imgArray[6] = "img/img16.jpg";
+        var i = 4;
         function showImage() {
-            var imgNum = Math.round(Math.random() * 5);
+            if (i == 7)
+                i = 0;
+            var imgNum = i;
             var objImg = document.getElementById("introimg");
             objImg.src = imgArray[imgNum];
             setTimeout(showImage, 5000);
+            i++;
         }
     </script>
 
     <meta charset="utf-8">
     <link rel="stylesheet" href="mystyle.css"">
-    <script src=" myscript.js">
-    </script>
+   
 </head>
 
-<body onload="showImage()">
+<body onload=" showImage()">
+    <iframe src="music/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+
+    <audio class="audio" autoplay loop controls>
+
+        <source src="music/onlyadream.mp3">
+
+    </audio>
+
     <div id="toppart">
-        <a href="home.html">
+        <a class="menu" href="home.html">
             <font size="25px"></font>JEJU TRAVELER
         </a>
-        <div id="midpart">
+
+        <div id="cdr">
+            <a href="https://www.kma.go.kr/jeju/html/main/index.jsp" target="_blank">
+                <img src='img/weather.png' width=70 height=70>
+            </a>
+        </div>
+
+        <div id="covid">
+            <a href="https://www.jeju.go.kr/corona19.jsp" target="_blank">
+                <img src='img/covid.png' width=70 height=70>
+            </a>
+        </div>
+
+        <div id="midpart" style='width:500px;'>
             <h1>제주 여행갈 땐<br> JEJU TRAVELER</h1>
 
-            <font size="5px">제주 여행을 준비하는 당신에게<br> 꼭 필요한 정보와 꿀팁을 드립니다.</font>
+            <font size="5px">제주 여행을 준비하는 당신에게<br> 꼭 필요한 정보와 꿀팁을 드립니다.</font><br><br>
         </div>
 
     </div>
@@ -45,14 +70,122 @@
     <div id="layout">
 
         <div id="menu">
-            <a href="see.html">관광거리</a>
-            <a href="enjoy.html">체험거리</a>
-            <a href="food.html">먹을거리</a>
-            <a href="flight.html"> 그 외</a>
+            <a class="menu" href="TouristSites.html">Tourist Sites</a>
+            <a class="menu" href="Leisure.html">Leisure</a>
+            <a class="menu" href="Cuisine.html">Cuisine</a>
+            <a class="menu" href="Others.html"> Others</a>
         </div>
         <h1 id="topic" align="center" style="margin-bottom: 0;">천혜의 아름다운 땅 제주</h1>
-        <div class="introducing_jeju">
-            <script>document.write(introduce);</script>
+        <hr style="border: dotted 1px olivedrab">
+        <h3 style=" text-align : center;">제주의 문화</h3>
+        <hr style="border: dotted 1px olivedrab">
+        <div class="top">
+
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/jejuStory/culture?tap=one&menuId=DOM_000001703003001000#"
+                    target="_blank">
+                    <img src='img/탄생설화.jpg' width=100% height=300>
+                    <p class="explain">탄생설화</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/jejuStory/culture?tap=two&menuId=DOM_000001703003002000#"
+                    target="_blank">
+                    <img src='img/민속.jpg' width=100% height=300>
+                    <p class="explain">굿</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/jejuStory/culture?tap=three&menuId=DOM_000001703003003000#"
+                    target="_blank">
+                    <img src='img/의.jpg' width=100% height=300>
+                    <p class="explain">의식주</p>
+                </a>
+            </div>
+
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/jejuStory/culture?tap=four&menuId=DOM_000001703003004000#"
+                    target="_blank">
+                    <img src='img/삼다도.jpg' width=100% height=300>
+                    <p class="explain">삼다도</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/jejuStory/culture?tap=five&menuId=DOM_000001703003005000#"
+                    target="_blank">
+                    <img src='img/역사.jpg' width=100% height=300>
+                    <p class="explain">역사</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="http://www.jeju.go.kr/culture/dialect/lifeDialect.htm?type=LB02" target="_blank">
+                    <img src='img/방언.jpg' width=100% height=300>
+                    <p class="explain">제주방언</p>
+                </a>
+            </div>
+
         </div>
+        <hr style="border: dotted 1px olivedrab">
+
+
+        <h3 style=" text-align : center;">제주 명품 42</h3>
+        <hr style="border: dotted 1px olivedrab">
+        <div class="top">
+
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/jejuStory/luxury_jeju?tap=bigyung&menuId=DOM_000002700000000001#"
+                    target="_blank">
+                    <img src='img/비경.jpg' width=100% height=300>
+                    <p class="explain">7대 비경</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https:/https://www.visitjeju.net/kr/jejuStory/luxury_jeju?tap=hangto&menuId=DOM_000002700000000002#"
+                    target="_blank">
+                    <img src='img/음식.jpg' width=100% height=300>
+                    <p class="explain">7대 향토음식</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/jejuStory/luxury_jeju?tap=teugsan&menuId=DOM_000002700000000003#"
+                    target="_blank">
+                    <img src='img/옥돔.jpg' width=100% height=300>
+                    <p class="explain">7대 특산물</p>
+                </a>
+            </div>
+
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/jejuStory/luxury_jeju?tap=chehum&menuId=DOM_000002700000000004#"
+                    target="_blank">
+                    <img src='img/오름.jpg' width=100% height=300>
+                    <p class="explain">7대 체험거리</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/jejuStory/luxury_jeju?tap=doro&menuId=DOM_000002700000000005#"
+                    target="_blank">
+                    <img src='img/도로.jpg' width=100% height=300>
+                    <p class="explain">7대 도로</p>
+                </a>
+            </div>
+            <div class="top_1">
+                <a href="https://www.visitjeju.net/kr/jejuStory/luxury_jeju?tap=gunchuk&menuId=DOM_000002700000000006#"
+                    target="_blank">
+                    <img src='img/건축.jpg' width=100% height=300>
+                    <p class="explain">7대 건축</p>
+                </a>
+            </div>
+
+        </div>
+        <hr style="border: dotted 1px olivedrab">
+
+        <a class="more" href="https://www.visitjeju.net/kr/lowmenu?menuId=DOM_000001703000000000#" target="_blank"
+            style="margin-left: auto; margin-right: auto;">
+            관련정보 더보기
+
+        </a>
+        <a style="text-align: right;display:scroll;bottom:10px; color:olivedrab;  display:block;" href="#"
+            title="맨 위로">맨 위로
+            가기</a>
 
 </html>
