@@ -3,7 +3,7 @@
 ### 김명준교수님의 웹콘텐츠개발 수업을 듣고 개발하였습니다.
 
 #### final Project
-제주여행 소개 webpage를 만들어보았습니다. \n
+제주여행 소개 webpage를 만들어보았습니다. <br>
 데모 동영상 link: https://drive.google.com/file/d/1TeyLxiPtKhb4Rdk2_kTUd3n2WaY0h1F9/view?usp=sharing
 
 
