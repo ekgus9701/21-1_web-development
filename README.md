@@ -1,6 +1,11 @@
 # web_dev2021
 
-### 김명준교수님의 웹콘텐츠개발 수업을 듣고 짜는 코드들
+### 김명준교수님의 웹콘텐츠개발 수업을 듣고 개발하였습니다.
+
+#### final Project
+제주여행 소개 webpage를 만들어보았습니다.
+데모 동영상 link: 	https://drive.google.com/file/d/1TeyLxiPtKhb4Rdk2_kTUd3n2WaY0h1F9/view?usp=sharing
+
 
 ##### 0310 
 ```
