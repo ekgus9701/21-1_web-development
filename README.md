@@ -4,7 +4,7 @@
 
 #### final Project
 제주여행 소개 webpage를 만들어보았습니다. <br>
-데모 동영상 link: https://drive.google.com/file/d/1TeyLxiPtKhb4Rdk2_kTUd3n2WaY0h1F9/view?usp=sharing
+데모 동영상 link: https://drive.google.com/file/d/1Kvrb8Non-_dvL7uKyLzZ4Da7RdR1j2ZD/view?usp=sharing
 
 
 ##### 0310 
